@@ -2,25 +2,50 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Adaptation aux écrans mobiles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>EpikurSport - Tibo</title>
 
-    <meta property="og:title" content="EpikurSport - Tibo">
-    <meta property="og:description" content="Découvrez Tibo avec EpikurSport">
-    <meta property="og:image" content="https://epikursport.github.io/Tibo/HTML-Tibo_220826.jpg">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://epikursport.github.io/Tibo/">
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="EpikurSport - Tibo">
-    <meta name="twitter:description" content="Découvrez Tibo avec EpikurSport">
-    <meta name="twitter:image" content="https://epikursport.github.io/Tibo/HTML-Tibo_220826.jpg">
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111d29;
+        }
+
+        img {
+            display: block;
+
+            /* L'image ne dépassera jamais de l'écran */
+            max-width: 100vw;
+            max-height: 100vh;
+
+            /* Conservation des proportions */
+            width: auto;
+            height: auto;
+
+            object-fit: contain;
+        }
+    </style>
 </head>
 
 <body>
 
-    <img src="HTML-Tibo_220826.jpg" alt="EpikurSport - Tibo">
+    <img
+        src="HTML-Tibo_220826.jpg"
+        alt="EpikurSport - Tibo"
+    >
 
 </body>
 </html>
